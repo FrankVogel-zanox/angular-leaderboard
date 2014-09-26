@@ -1,0 +1,102 @@
+<div id="evolutionWrapper">
+	<div id="top_txt">
+		<div class="top_txt_img"><img border="0" src="assets/img/change_txt.png" /></div>
+	</div>
+	<div id="last_changes_container" ng-repeat="evolved in allEvolved">
+<!--1 -->
+		<div id="changed1" ng-if="$index==0">
+			<div class="row_wrapper">
+				<div class="user_number"><img src="assets/img/number/blank.png" /></div>
+				<div class="user_row">
+					<div class="animal">
+						<img ng-src="{{evolved.animalImageBefore}}" />
+					</div>
+					<div class="incentive">
+						<img ng-src="{{evolved.animalImageAfter}}" />
+					</div>
+					<div class="text_container">
+						<span class="span_user_name">{{evolved.nickName}}</span>
+						<span class="span_user_count">{{evolved.score}}</span>
+					</div>
+				</div>
+				<div class="special_txt"><span style="float:left"><img src="assets/img/arrow_l.png" /> Animal before</span><span style="float:right">Animal Now <img src="assets/img/arrow_r.png" /></span></div>
+			</div>
+		</div>
+<!--2 -->
+		<div id="changed2" ng-if="$index==1">
+			<div class="row_wrapper">
+				<div class="user_number"><img src="assets/img/number/blank.png" /></div>
+				<div class="user_row">
+					<div class="animal">
+						<img ng-src="{{evolved.animalImageBefore}}" />
+					</div>
+					<div class="incentive">
+						<img ng-src="{{evolved.animalImageAfter}}" />
+					</div>
+					<div class="text_container">
+						<span class="span_user_name">{{evolved.nickName}}</span>
+						<span class="span_user_count">{{evolved.score}}</span>
+					</div>
+				</div>
+				<div class="special_txt"><span style="float:left"><img src="assets/img/arrow_l.png" /> Animal before</span><span style="float:right">Animal Now <img src="assets/img/arrow_r.png" /></span></div>
+			</div>
+		</div>
+<!-- 3 -->
+		<div id="changed3" ng-if="$index==2">
+			<div class="row_wrapper">
+				<div class="user_number"><img src="assets/img/number/blank.png" /></div>
+				<div class="user_row">
+					<div class="animal">
+						<img ng-src="{{evolved.animalImageBefore}}" />
+					</div>
+					<div class="incentive">
+						<img ng-src="{{evolved.animalImageAfter}}" />
+					</div>
+					<div class="text_container">
+						<span class="span_user_name">{{evolved.nickName}}</span>
+						<span class="span_user_count">{{evolved.score}}</span>
+					</div>
+				</div>
+				<div class="special_txt"><span style="float:left"><img src="assets/img/arrow_l.png" /> Animal before</span><span style="float:right">Animal Now <img src="assets/img/arrow_r.png" /></span></div>
+			</div>
+		</div>
+<!-- 4 -->
+		<div id="changed4" ng-if="$index==3">
+			<div class="row_wrapper">
+				<div class="user_number"><img src="assets/img/number/blank.png" /></div>
+				<div class="user_row">
+					<div class="animal">
+						<img ng-src="{{evolved.animalImageBefore}}" />
+					</div>
+					<div class="incentive">
+						<img ng-src="{{evolved.animalImageAfter}}" />
+					</div>
+					<div class="text_container">
+						<span class="span_user_name">{{evolved.nickName}}</span>
+						<span class="span_user_count">{{evolved.score}}</span>
+					</div>
+				</div>
+				<div class="special_txt"><span style="float:left"><img src="assets/img/arrow_l.png" /> Animal before</span><span style="float:right">Animal Now <img src="assets/img/arrow_r.png" /></span></div>
+			</div>
+		</div>
+<!-- 5 -->
+		<div id="changed5" ng-if="$index==4">
+			<div class="row_wrapper">
+				<div class="user_number"><img src="assets/img/number/blank.png" /></div>
+				<div class="user_row">
+					<div class="animal">
+						<img ng-src="{{evolved.animalImageBefore}}" />
+					</div>
+					<div class="incentive">
+						<img ng-src="{{evolved.animalImageAfter}}" />
+					</div>
+					<div class="text_container">
+						<span class="span_user_name">{{evolved.nickName}}</span>
+						<span class="span_user_count">{{evolved.score}}</span>
+					</div>
+				</div>
+				<div class="special_txt"><span style="float:left"><img src="assets/img/arrow_l.png" /> Animal before</span><span style="float:right">Animal Now <img src="assets/img/arrow_r.png" /></span></div>
+			</div>
+		</div>
+	</div>
+</div>

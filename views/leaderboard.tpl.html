@@ -1,0 +1,28 @@
+<div id="leaderboardWrapper">
+	<!-- Left CONTENT -->
+	<div id="left_container">
+	<div id="text-arrow_l"></div>
+		<div class="animate">
+			<div class="boxes">
+				<div class="row_wrapper" ng-repeat="score in allScores | limitTo : scoreListLimit">
+					<ng-include src="'js/directives/scoreBar.tpl.html'" onload="index=$index+1"></ng-include>
+					<div class="clear-all"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Left CONTENT -->
+
+	<!-- START Right CONTENT -->
+	<div id="right_container">
+	<div id="text-arrow_r"></div>
+		<div class="animate">
+			<div class="boxes">
+				<div class="row_wrapper" ng-repeat="score in allScores | limitTo : -scoreListLimit">
+				<ng-include src="'js/directives/scoreBar.tpl.html'" onload="index=$index+8"></ng-include>
+				<div class="clear-all"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END Right CONTENT -->
+</div>
